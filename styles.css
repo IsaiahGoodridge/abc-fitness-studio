@@ -5,8 +5,8 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: black;
   background-color: white;
+  color: #00231c;
 }
 
 /* HEADER */
@@ -14,6 +14,8 @@ body {
 header {
   display: flex;
   flex-direction: column;
+  background-color: #1e1b1c;
+  color: #00ff00;
 }
 
 
@@ -119,6 +121,14 @@ main {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.5rem; 
+}
+
+.membership-name-1 {
+  color: #ae232d;
+}
+
+.membership-name-2 {
+  color:#519c4f
 }
 
 .membership-description {
