@@ -3,106 +3,102 @@
   <head>
     <title>Home</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <section id="header">
-      <header id="header">
-        <div>
-          <h1>ABC Fitness Studio</h1>
+    <header class="site-header">
+      <div class="header-content">
+        <h1 class="studio-name">ABC Fitness Studio</h1>
+        <div class="logo-container">
+          <img src="./assets/afs-logo.png" alt="ABC Fitness Studio Logo" class="logo" />
         </div>
-        <div class="logo logo-container">
-          <img src="./assets/afs-logo.png" alt="ABC Fitness Studio Logo" class="logo">
-        </div>
-      </header>
-    </section>
-    <nav id="nav-bar">
-      <ul class="nav-bar-list">
-        <li><a href="/page-1-home.html"> Home </a></li>
-        <li><a href="/page-2-gallery.html"> Gallery </a></li>
-        <li><a href="/page-3-about-us.html"> About Us </a></li>
-        <li><a href="/page-4-outreach.html"> Outreach </a></li>
-      </ul>
-    </nav>
+      </div>
+      <nav class="main-navigation">
+        <ul class="navigation-list">
+          <li><a href="/page-1-home.html">Home</a></li>
+          <li><a href="/page-2-gallery.html">Gallery</a></li>
+          <li><a href="/page-3-about-us.html">About Us</a></li>
+          <li><a href="/page-4-outreach.html">Outreach</a></li>
+        </ul>
+      </nav>
+    </header>
+    
     <main>
-      <div class="memberships-promo">
-        <div class="membership-promo-heading">
-          <h1>Membership Promo</h1>
-        </div>
+      <section class="memberships">
+        <h2 class="section-title">Membership Promo</h2>
         <div class="membership-options">
-          <div class="membership-option-1-container">
-            <h2 class="membership-name">Membership Name</h2>
-            <p class="membership-p">Perks</p>
+          <article class="membership-option">
+            <h3 class="membership-name">Membership Name</h3>
+            <p class="membership-perks">Perks</p>
+          </article>
+          <article class="membership-option">
+            <h3 class="membership-name">Membership Name</h3>
+            <p class="membership-perks">Perks</p>
+          </article>
+          <article class="membership-option">
+            <h3 class="membership-name">Membership Name</h3>
+            <p class="membership-perks">Perks</p>
+          </article>
+        </div>
+      </section>
+      <section class="client-highlights">
+        <h2 class="section-title">Client Highlights</h2>
+        <p class="section-subtitle">Don't just take it from us!</p>
+      </section>
+      <section class="merchandise">
+        <h2 class="section-title">Merchandise Promo</h2>
+        <div class="merchandise-gallery">
+          <figure class="merchandise-item">
+            <img src="" alt="Merchandise Image 1" />
+          </figure>
+          <figure class="merchandise-item">
+            <img src="" alt="Merchandise Image 2" />
+          </figure>
+          <figure class="merchandise-item">
+            <img src="" alt="Merchandise Image 3" />
+          </figure>
+        </div>
+      </section>
+      <section class="class-enrollment">
+        <h2 class="section-title">Enroll by Class</h2>
+        <div class="class-categories">
+          <div class="class-category">
+            <h3>Class Category</h3>
           </div>
-          <div class="membership-option-2-container">
-            <h2 class="membership-name">Membership Name</h2>
-            <p class="membership-p">Perks</p>
+          <div class="class-category">
+            <h3>Class Category</h3>
           </div>
-          <div class="membership-option-3-container">
-            <h2 class="membership-name">Membership Name</h2>
-            <p class="membership-p">Perks</p>
+          <div class="class-category">
+            <h3>Class Category</h3>
+          </div>
+          <div class="class-category">
+            <h3>Class Category</h3>
+          </div>
+          <div class="class-category">
+            <h3>Class Category</h3>
+          </div>
+          <div class="class-category">
+            <h3>Class Category</h3>
+          </div>
+          <div class="class-category">
+            <h3>Class Category</h3>
+          </div>
+          <div class="class-category">
+            <h3>Class Category</h3>
           </div>
         </div>
-      </div>
+      </section>
     </main>
-    <section id="client-highlights">
-      <div class="client-hightlights-heading-container">
-        <h2 class="client-highlights-heading">Client Highlights</h2>
+    <footer class="site-footer">
+      <button class="subscribe-button">Subscribe</button>
+      <div class="footer-links">
+        <a href="#">Social Link 1</a>
+        <a href="#">Social Link 2</a>
+        <a href="#">Social Link 3</a>
       </div>
-      <div class="client-highlights-subheading-container">
-        <h3 class="client-highlights-subheading">Don't just take it from us!</h3>
-      </div>
-    </section>
-    <section id="merchandise-promo">
-      <div class=merchandise-promo-heading-container">
-        <h2 class=merchandise-promo-heading> merchandise Promo</h2>
-      </div>
-      <div class="merchensise-img-1 merchandise-img">
-        <img src="" alt="">
-      </div>
-      <div class="merchandise-img-2 merchandise-img">
-        <img src="" alt="">
-      </div>
-      <div class="merchandise-img-3 merchandise-img">
-        <img src="" alt="">
-      </div>
-    </section>
-    <section id="class-enrollment">
-      <div>
-        <h2>Enroll by Class</h2>
-      </div>
-      <div>
-        <h4>Class Category</h4>
-      </div>
-      <div>
-        <h4>Class Category</h4>
-      </div>
-      <div>
-        <h4>Class Category</h4>
-      </div>
-      <div>
-        <h4>Class Category</h4>
-      </div>
-      <div>
-        <h4>Class Category</h4>
-      </div>
-      <div>
-        <h4>Class Category</h4>
-      </div>
-      <div>
-        <h4>Class Category</h4>
-      </div>
-      <div>
-        <h4>Class Category</h4>
-      </div>
-    </section>
-    <footer id="footer" class="footer">
-      <button>Subscribe</button>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
     </footer>
   </body>
 </html>
+
