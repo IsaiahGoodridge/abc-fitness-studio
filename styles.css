@@ -272,5 +272,55 @@ main {
   color: #519c4f;
 }
 
-/* ENROLL BY CLASS */
+/* FOOTER */
+.footer {
+  background-color: #1e1b1c;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.subscription {
+  margin-bottom: 1.5rem;
+}
+
+.subscription input[type="email"] {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #fff;
+  width: 18rem;
+  margin-right: 0.5rem;
+}
+
+.subscription .btn {
+  background-color: #00FF00;
+  color: #1e1b1c;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.social-media {
+  margin-top: 1.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+}
 
