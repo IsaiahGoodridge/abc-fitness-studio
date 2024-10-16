@@ -160,7 +160,7 @@ main {
   border-radius: 0.3rem;
   margin-bottom: 1rem;
   border: 1px solid #00FF00;
-
+}
 .client-name {
   font-weight: bold;
   font-size: 1.2rem;
@@ -169,6 +169,58 @@ main {
 
 .client-testimonial {
   font-style: italic;
-  margin-top: 0.5rem; 
+  margin-top: 0.5rem;
+  color: #00FF00;
+}
+
+/* Merchandise Promo */
+
+#merchandise-promo {
+  background-color: #1E1B1C;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.merchandise-title {
+  font-size: 2rem;
+  color: #00FF00;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.merchandise-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 1rem;
+}
+
+.merchandise-item {
+  background-color: #1E1B1C;
+  color: #00FF00;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  flex: 1; 
+  border: 1px solid #00FF00; 
+}
+
+.merchandise-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.merchandise-name {
+  font-weight: bold;
+  font-size: 1.2rem; 
+  color: #00FF00; 
+}
+
+.merchandise-price {
+  font-weight: bold;
   color: #00FF00; 
 }
