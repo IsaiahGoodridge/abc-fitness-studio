@@ -324,3 +324,59 @@ main {
   transform: scale(1.1);
 }
 
+/* Gallery */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.product-card {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 600px; /* Optional: Set a maximum width for the cards */
+}
+
+.product-image {
+  flex: 0 0 30%; /* Image will take up 30% of the card's width */
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 1rem;
+  flex: 1; /* Take up the remaining space */
+}
+
+.product-title {
+  font-size: 1.2rem;
+  color: #1e1b1c;
+  margin: 0 0 0.5rem;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.add-to-cart-btn {
+  background-color: #519c4f; /* Gains Green */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #3e8a40; /* Slightly darker green for hover effect */
+}
