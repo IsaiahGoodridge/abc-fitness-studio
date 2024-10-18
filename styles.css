@@ -456,3 +456,81 @@ main {
 .submit-button:hover {
   background: #45a049; 
 }
+
+/* COMMUNITY INVOLVEMENT SECTION*/
+.community-involvement {
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cause-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cause-description {
+  flex: 0 0 70%;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.action-buttons {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donate-btn,
+.learn-more-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.donate-btn:hover,
+.learn-more-btn:hover {
+  background: #45a049;
+}
+
+/* EVENT SECTION */
+.events {
+  padding: 40px 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.event-list li {
+  margin: 15px 0;
+}
+
+.event-list a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.event-list a:hover {
+  text-decoration: underline;
+}
