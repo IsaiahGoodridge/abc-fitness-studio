@@ -28,35 +28,49 @@
       <section class="about-us">
         <div class="about-us-content">
           <h2 class="section-title">About Us</h2>
-          <p class="section-description">Paragraph</p>
+          <p class="section-description">
+            ABC Fitness Studio is your local haven for health and wellness. 
+            We specialize in a diverse range of classes, including yoga, 
+            Pilates, and Zumba, all geared toward promoting a healthy 
+            and active lifestyle. Our commitment to well-being provides 
+            our community with a welcoming space for physical and mental wellness.
+          </p>
+          <p class="section-description">
+            Our qualified instructors are here to guide you on your fitness 
+            journey, ensuring that you feel empowered and motivated to reach 
+            your goals. With top-notch fitness equipment and a variety of 
+            classes, we cater to individuals of all fitness levels.
+          </p>
         </div>
-        <div class="business-hours">
-          <h2 class="section-title">Business Hours</h2>
+        
+        <aside class="business-hours">
+          <h3 class="section-title">Business Hours</h3>
           <ul class="hours-list">
-            <li>Mon-Fri</li>
-            <li>Sat-Sun</li>
+            <li>Monday–Friday: 6 a.m. to 8 p.m.</li>
+            <li>Saturday: 8 a.m. to 6 p.m.</li>
+            <li>Sunday: Closed</li>
           </ul>
-        </div>
+        </aside>
       </section>
-
+  
       <section class="contact-us">
         <h2 class="section-title">Contact Us</h2>
-        <form action="#" class="contact-form">
+        <form action="#" class="contact-form" method="post">
           <div class="form-group">
             <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname">
+            <input type="text" id="fname" name="fname" required>
           </div>
           <div class="form-group">
             <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname">
+            <input type="text" id="lname" name="lname" required>
           </div>
           <div class="form-group">
             <label for="pnumber">Phone Number:</label>
-            <input type="number" id="pnumber" name="pnumber">
+            <input type="tel" id="pnumber" name="pnumber" required>
           </div>
           <div class="form-group">
             <label for="feedback">Feedback:</label>
-            <input type="text" name="feedback" id="feedback">
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
           </div>
           <div class="form-group checkbox-group">
             <input type="checkbox" name="feedback-or-custom-order" id="feedback-or-custom-order">
@@ -68,6 +82,7 @@
         </form>
       </section>
     </main>
+  
     <footer class="footer">
       <div class="subscription">
         <h3>Subscribe to Our Newsletter</h3>

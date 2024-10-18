@@ -324,7 +324,7 @@ main {
   transform: scale(1.1);
 }
 
-/* Gallery */
+/* GALLERY*/
 .products-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -337,11 +337,11 @@ main {
   border: 1px solid #d3d3d3;
   border-radius: 5px;
   overflow: hidden;
-  max-width: 600px; /* Optional: Set a maximum width for the cards */
+  max-width: 600px; 
 }
 
 .product-image {
-  flex: 0 0 30%; /* Image will take up 30% of the card's width */
+  flex: 0 0 30%; /
 }
 
 .product-image img {
@@ -352,7 +352,7 @@ main {
 
 .product-details {
   padding: 1rem;
-  flex: 1; /* Take up the remaining space */
+  flex: 1; 
 }
 
 .product-title {
@@ -368,7 +368,7 @@ main {
 }
 
 .add-to-cart-btn {
-  background-color: #519c4f; /* Gains Green */
+  background-color: #519c4f; 
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -378,5 +378,81 @@ main {
 }
 
 .add-to-cart-btn:hover {
-  background-color: #3e8a40; /* Slightly darker green for hover effect */
+  background-color: #3e8a40; 
+}
+
+/* ABOUT US */
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-content {
+  flex: 0 0 70%;
+  padding-right: 20px;
+}
+
+.business-hours {
+  flex: 0 0 30%; 
+  padding-left: 20px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.hours-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+/* CONTACT US */
+.contact-us {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.submit-button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #45a049; 
 }
