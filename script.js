@@ -1,8 +1,10 @@
 // Add to Cart event
-const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+  const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
     addToCartButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const productTitle = button.closest('.product-card').querySelector('.product-title').textContent;
+            const productCard = button.closest('.product-card');
+            const productTitle = productCard.querySelector('.product-title').textContent;
+            const productPrice = productCard.querySelector('.product-price').textContent;
             addItemToCart(productTitle);
             alert("Item added to the cart");
         });
