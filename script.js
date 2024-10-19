@@ -1,9 +1,12 @@
 // Add to Cart event
-document.querySelectorAll('.add-to-cart-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      alert('Item added to the cart');
+const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const productTitle = button.closest('.product-card').querySelector('.product-title').textContent;
+            addItemToCart(productTitle);
+            alert("Item added to the cart");
+        });
     });
-  });
   
   // Clear Cart event
   document.querySelector('.clear-cart-btn').addEventListener('click', () => {
