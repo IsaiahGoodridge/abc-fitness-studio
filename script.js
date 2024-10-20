@@ -51,6 +51,13 @@
     }
 });
 
+// Function to add item to sessionStorage cart
+function addItemToCart(title, price) {
+    let cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
+    cartItems.push({ title, price });
+    sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
+}
+
 
 // Subscribe feature event handler
 document.addEventListener("DOMContentLoaded", () => {
