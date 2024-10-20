@@ -38,6 +38,7 @@
       });
   }
 
+    displayCartItems();
 
 // Subscribe feature event handler
 document.addEventListener("DOMContentLoaded", () => {
