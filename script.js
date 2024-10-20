@@ -40,6 +40,18 @@
 
     displayCartItems();
 
+    // About Us Contact Form Local Storage
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            saveContactFormData();
+            alert("Thank you for your message");
+        });
+    }
+});
+
+
 // Subscribe feature event handler
 document.addEventListener("DOMContentLoaded", () => {
     const subscribeForm = document.querySelector('.subscription form');
