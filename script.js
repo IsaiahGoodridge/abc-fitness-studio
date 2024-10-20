@@ -25,14 +25,18 @@
     }
 
   // Process Order event
-  document.querySelector('.process-order-btn').addEventListener('click', () => {
-    const cartItems = document.querySelectorAll('.cart-item');
-    if (cartItems.length > 0) {
-      alert('Thank you for your order');
-    } else {
-      alert('Cart is empty');
-    }
-  });
+  const processOrderButton = document.querySelector('.process-order-btn');
+  if (processOrderButton) {
+      processOrderButton.addEventListener('click', () => {
+          if (sessionStorage.length > 0) {
+              sessionStorage.clear();
+              alert("Thank you for your order");
+              displayCartItems();
+          } else {
+              alert("Cart is empty");
+          }
+      });
+  }
 
 
 // Subscribe feature event handler
