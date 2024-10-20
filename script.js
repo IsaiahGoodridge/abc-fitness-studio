@@ -11,14 +11,18 @@
     });
   
   // Clear Cart event
-  document.querySelector('.clear-cart-btn').addEventListener('click', () => {
-    const cartItems = document.querySelectorAll('.cart-item');
-    if (cartItems.length > 0) {
-      alert('Cart cleared');
-    } else {
-      alert('No items to clear');
+  const clearCartButton = document.querySelector('.clear-cart-btn');
+    if (clearCartButton) {
+        clearCartButton.addEventListener('click', () => {
+            if (sessionStorage.length > 0) {
+                sessionStorage.clear();
+                alert("Cart cleared");
+                displayCartItems();
+            } else {
+                alert("No items to clear");
+            }
+        });
     }
-  });
 
   // Process Order event
   document.querySelector('.process-order-btn').addEventListener('click', () => {
