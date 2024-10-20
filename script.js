@@ -69,6 +69,23 @@ function displayCartItems() {
     }
 }
 
+// Save Contact Form Data to localStorage
+function saveContactFormData() {
+    const firstName = document.getElementById('fname').value;
+    const lastName = document.getElementById('lname').value;
+    const phoneNumber = document.getElementById('pnumber').value;
+    const feedback = document.getElementById('feedback').value;
+
+    const contactData = {
+        firstName,
+        lastName,
+        phoneNumber,
+        feedback
+    };
+
+    localStorage.setItem('contactData', JSON.stringify(contactData));
+}
+
 
 // Subscribe feature event handler
 document.addEventListener("DOMContentLoaded", () => {
