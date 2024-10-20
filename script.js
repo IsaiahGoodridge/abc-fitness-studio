@@ -5,7 +5,7 @@
             const productCard = button.closest('.product-card');
             const productTitle = productCard.querySelector('.product-title').textContent;
             const productPrice = productCard.querySelector('.product-price').textContent;
-            addItemToCart(productTitle);
+            addItemToCart(productTitle, productPrice);
             alert("Item added to the cart");
         });
     });
