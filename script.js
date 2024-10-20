@@ -58,6 +58,17 @@ function addItemToCart(title, price) {
     sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
 }
 
+// Function to display cart items in View Cart modal
+function displayCartItems() {
+    const cartContainer = document.querySelector('.cart-items');
+    if (cartContainer) {
+        let cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
+        cartContainer.innerHTML = cartItems.length > 0 
+            ? cartItems.map(item => `${item.title} - ${item.price}`).join('<br>')
+            : 'Cart is empty';
+    }
+}
+
 
 // Subscribe feature event handler
 document.addEventListener("DOMContentLoaded", () => {
