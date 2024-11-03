@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         button.addEventListener('click', () => {
             const productCard = button.closest('.product-card');
             const productTitle = productCard.querySelector('.product-title').textContent;
-            const productPrice = productCard.querySelector('.product-price').textContent; // Assuming you add product price in HTML
+            const productPrice = productCard.querySelector('.product-price').textContent;
             addItemToCart(productTitle, productPrice);
             alert("Item added to the cart");
         });

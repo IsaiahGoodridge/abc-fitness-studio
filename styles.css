@@ -2,13 +2,16 @@
   box-sizing: border-box;
 }
 
-html, body {
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   font-family: system-ui, sans-serif;
   background-color: white;
   color: #00231c;
-  height: 100%;
+
 }
 
 /* HEADER */
@@ -293,7 +296,8 @@ main {
 
 /* FOOTER */
 .footer {
-  position: absolute;
+  margin-top: auto;
+  height: 300px;
   width: 100%;
   background-color: #1e1b1c;
   color: #fff;
