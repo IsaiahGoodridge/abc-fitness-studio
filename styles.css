@@ -641,3 +641,49 @@ main {
 .clear-cart-btn:hover, .process-order-btn:hover {
   background-color: #3a7e39;
 }
+
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .navigation-list, .class-categories, .merchandise-container, .products-grid, .class-column {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .products-grid {
+      grid-template-columns: 1fr; /* Full width */
+  }
+  
+  .membership-options, .merchandise-container, .cart-items, .community-involvement, .about-us {
+      width: 100%;
+      padding: 1rem;
+      margin: 0 auto;
+  }
+  
+  .logo {
+      width: 3rem;
+  }
+
+  .membership-option, .merchandise-item, .product-card, .cause-box, .cart-item {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .view-cart-btn {
+      width: 4rem;
+      top: 5px;
+      right: 5px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .membership-options, .merchandise-container, .about-us {
+      flex-direction: row;
+      width: 90%;
+  }
+}
