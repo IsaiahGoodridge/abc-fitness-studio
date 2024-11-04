@@ -436,50 +436,58 @@ main {
 }
 
 /* CONTACT US */
-.contact-us {
-  margin: 20px;
-  padding: 20px;
-  background: white;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.section-title {
+text-align: center;
 }
 
-.contact-form {
+.contact-form .form-group {
   display: flex;
   flex-direction: column;
-}
-
-.form-group {
+  align-items: center;
   margin-bottom: 15px;
 }
 
-.form-group label {
+.contact-form label {
+  font-weight: bold;
   margin-bottom: 5px;
 }
 
-.form-group input,
-.form-group textarea {
-  padding: 10px;
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  padding: 8px;
+  font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
+  width: 20rem;
+  height: 2rem;
 }
 
-.checkbox-group {
+textarea {
+height: 10rem !important;
+}
+
+.contact-form .checkbox-group {
   display: flex;
   align-items: center;
 }
 
-.submit-button {
-  background: #4CAF50;
+.contact-form .checkbox-group label {
+  margin-left: 10px;
+}
+
+.contact-form .submit-button {
+  background-color: #4CAF50;
   color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
   border: none;
-  padding: 10px;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.submit-button:hover {
-  background: #45a049; 
+.contact-form .submit-button:hover {
+  background-color: #45a049;
 }
 
 /* COMMUNITY INVOLVEMENT SECTION*/
@@ -659,9 +667,11 @@ main {
       padding: 1rem;
       margin: 0 auto;
   }
-  
+  .studio-name{
+    font-size: 15px;
+  }
   .logo {
-      width: 3rem;
+      width: 2rem;
   }
 
   .membership-option, .merchandise-item, .product-card, .cause-box, .cart-item {
@@ -670,7 +680,7 @@ main {
   }
 
   .view-cart-btn {
-      width: 4rem;
+      width: 6rem;
       top: 5px;
       right: 5px;
   }
